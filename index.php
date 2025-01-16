@@ -21,38 +21,38 @@
 </form>
 
 <?php 
-    require_once("./lexico/analisador_lexico.php");
+require_once("./lexico/analisador_lexico.php");
+require_once("./sintatico/analisador_sintatico.php");
+require_once("./sintatico/config.php");
 
-    // Define o caminho para o JSON do autômato
-    $jsonPath = './automato/tabela.json';
+list($gramatica, $tabelaAcao, $tabelaIrPara) = require('./sintatico/config.php');
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['sourceCode'])) {
-        $sourceCode = $_POST['sourceCode'];
+$jsonPath = './automato/tabela.json';
 
-        try {
-            // Cria o analisador léxico
-            $analisador = new AnalisadorLexico($sourceCode, $jsonPath);
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['sourceCode'])) {
+    $sourceCode = $_POST['sourceCode'];
 
-            // Realiza a análise léxica
-            $tokens = $analisador->analisar();
+    try {
+        // Análise léxica
+        $analisadorLexico = new AnalisadorLexico($sourceCode, $jsonPath);
+        $tokens = $analisadorLexico->analisar();
 
-            // Exibe os tokens encontrados
-            echo "<h2>Tokens Reconhecidos:</h2><pre>";
-            foreach ($tokens as $token) {
-                echo "Token: {$token['token']}, Lexema: '{$token['valor']}'\n";
-            }
-            echo "</pre>";
-
-            // Aqui você pode integrar a análise sintática, se necessário
-            // Por exemplo, passando $tokens para um AnalisadorSintatico
-            // ...
-
-        } catch (Exception $e) {
-            // Exibe erros encontrados durante a análise
-            echo "<h2>Erro</h2><pre>" . htmlspecialchars($e->getMessage()) . "</pre>";
+        echo "<h2>Tokens Reconhecidos:</h2><pre>";
+        foreach ($tokens as $token) {
+            echo "Token: {$token['token']}, Lexema: '{$token['valor']}'\n";
         }
-    }
-?>
+        echo "</pre>";
 
+        // Análise sintática
+        $analisadorSintatico = new AnalisadorSintatico($tabelaAcao, $tabelaIrPara, $gramatica);
+        $resultado = $analisadorSintatico->analisar($tokens);
+
+        echo "<h2>Resultado da Análise Sintática:</h2><pre>$resultado</pre>";
+
+    } catch (Exception $e) {
+        echo "<h2>Erro</h2><pre>" . htmlspecialchars($e->getMessage()) . "</pre>";
+    }
+}
+?>
 </body>
 </html>
