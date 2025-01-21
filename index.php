@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador Léxico e Sintático</title>
+    <title>Analisador Sintático SLR</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
         textarea { width: 100%; height: 200px; }
@@ -13,19 +13,16 @@
 </head>
 <body>
 
-<h1>Analisador Léxico e Sintático</h1>
+<h1>Analisador Sintático SLR</h1>
 <form method="post">
     <label for="sourceCode">Digite o código fonte:</label>
     <textarea name="sourceCode" id="sourceCode"><?php echo isset($_POST['sourceCode']) ? htmlspecialchars($_POST['sourceCode']) : ''; ?></textarea>
     <button type="submit">Analisar</button>
 </form>
 
-<?php 
-require_once("./lexico/analisador_lexico.php");
-require_once("./sintatico/analisador_sintatico.php");
-require_once("./sintatico/config.php");
-
-list($gramatica, $tabelaAcao, $tabelaIrPara) = require('./sintatico/config.php');
+<?php
+require_once './lexico/analisador_lexico.php';
+require_once './sintatico/analisador_sintatico.php';
 
 $jsonPath = './automato/tabela.json';
 
@@ -33,26 +30,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['sourceCode'])) {
     $sourceCode = $_POST['sourceCode'];
 
     try {
-        // Análise léxica
+        // Analisador léxico para obter tokens
         $analisadorLexico = new AnalisadorLexico($sourceCode, $jsonPath);
         $tokens = $analisadorLexico->analisar();
 
         echo "<h2>Tokens Reconhecidos:</h2><pre>";
         foreach ($tokens as $token) {
-            echo "Token: {$token['token']}, Lexema: '{$token['valor']}'\n";
+            echo "Token: {$token->getName()}, Lexema: '{$token->getLexeme()}', Linha: {$token->getLine()}, Coluna: {$token->getInicio()}\n";
         }
         echo "</pre>";
 
-        // Análise sintática
-        $analisadorSintatico = new AnalisadorSintatico($tabelaAcao, $tabelaIrPara, $gramatica);
-        $resultado = $analisadorSintatico->analisar($tokens);
+        // Passando os objetos de tokens para o analisador sintático
+        $tokensArray = array_map(function($token) {
+            return $token; // Passando o objeto Token inteiro
+        }, $tokens);
 
-        echo "<h2>Resultado da Análise Sintática:</h2><pre>$resultado</pre>";
+        $analisadorSintatico = new AnalisadorSintatico('./tabela_sintatica/tabela_sintatica.json');
+        $resultado = $analisadorSintatico->analisar($tokensArray); // Aqui, os tokens passados são objetos
 
+        echo "<h2>Resultado da Análise Sintática:</h2><pre>";
+        echo $resultado ? "Análise sintática concluída com sucesso!" : "Erro de sintaxe encontrado.";
+        echo "</pre>";
+        
     } catch (Exception $e) {
         echo "<h2>Erro</h2><pre>" . htmlspecialchars($e->getMessage()) . "</pre>";
     }
 }
 ?>
+
 </body>
 </html>

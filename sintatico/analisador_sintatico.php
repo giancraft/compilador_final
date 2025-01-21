@@ -1,69 +1,70 @@
 <?php
 
-class AnalisadorSintatico
-{
-    private $tabelaAcao; // Tabela de Ações (SHIFT, REDUCE, ACCEPT, ERROR)
-    private $tabelaIrPara; // Tabela Ir Para (transições entre estados)
-    private $pilha; // Pilha para os estados e símbolos
-    private $tokens; // Tokens recebidos do analisador léxico
-    private $gramatica; // Produções da gramática
+class AnalisadorSintatico {
+    private array $gotoTable;
+    private array $actionTable;
+    private array $producoes = [
+        ["<PROGRAMA>", 8], ["<VARS>", 2], ["<VARS>", 0], ["<VAR>", 3], ["<TIPO>", 1], ["<TIPO>", 1], ["<TIPO>", 1], ["<TIPO>", 1],
+        ["<COMANDOS>", 2], ["<COMANDOS>", 0], ["<COMANDO>", 1], ["<COMANDO>", 1], ["<COMANDO>", 1], ["<COMANDO>", 1], ["<COMANDO>", 1], ["<COMANDO>", 1],
+        ["<COMANDO>", 1], ["<COMANDO>", 1], ["<ATRIBUICAO>", 4], ["<LEITURA>", 5], ["<IMPRESSAO>", 5], ["<RETORNO>", 3], ["<CHAMADA_FUNCAO>", 5], ["<LISTA_ARGUMENTOS>", 2],
+        ["<LISTA_ARGUMENTOS>", 0], ["<LISTA_ARGUMENTOS_REST>", 3], ["<LISTA_ARGUMENTOS_REST>", 0], ["<IF>", 7], ["<IF>", 11], ["<FOR>", 10], ["<CONDICAO>", 1], ["<WHILE>", 7],
+        ["<EXPRESSAO>", 2], ["<EXPRESSAO_REST>", 2], ["<EXPRESSAO_REST>", 0], ["<OPERADOR_LOGICO>", 1], ["<OPERADOR_LOGICO>", 1], ["<OPERADOR_LOGICO>", 1], ["<OPERADOR_LOGICO>", 1], ["<OPERADOR_LOGICO>", 1],
+        ["<OPERADOR_LOGICO>", 1], ["<TERMO>", 2], ["<TERMO_REST>", 2], ["<TERMO_REST>", 0], ["<OPERADOR_ARITMETICO>", 1], ["<OPERADOR_ARITMETICO>", 1], ["<OPERADOR_ARITMETICO>", 1], ["<OPERADOR_ARITMETICO>", 1],
+        ["<OPERADOR_ARITMETICO>", 1], ["<FATOR>", 1], ["<FATOR>", 1], ["<FATOR>", 3]
+    ];
 
-    public function __construct($tabelaAcao, $tabelaIrPara, $gramatica)
-    {
-        $this->tabelaAcao = $tabelaAcao;
-        $this->tabelaIrPara = $tabelaIrPara;
-        $this->gramatica = $gramatica;
-        $this->pilha = [0]; // Inicia com estado 0 na pilha
+    public function __construct(string $jsonFilePath) {
+        $this->carregarTabela($jsonFilePath);
     }
 
-    public function analisar($tokens)
-    {
-        $this->tokens = $tokens;
-        $tokens[] = ['token' => '$', 'valor' => '']; // Adiciona marcador de fim de entrada
-        $indiceToken = 0;
+    private function carregarTabela(string $filePath): void {
+        $data = json_decode(file_get_contents($filePath), true);
+        if ($data === null) {
+            throw new Exception("Arquivo JSON inválido.");
+        }
+
+        $this->gotoTable = $data['goto'];
+        $this->actionTable = $data['actionTable'];
+    }
+
+    public function analisar(array $tokens): bool {
+        $pilha = [0];
+        $indice = 0;
 
         while (true) {
-            $estadoAtual = end($this->pilha);
-            $tokenAtual = $tokens[$indiceToken]['token'];
+            $estadoAtual = end($pilha);
+            $tokenAtual = $tokens[$indice] ?? new Token('$', '$', 0, 0);
+            $nomeToken = $tokenAtual->getName();
 
-            $acao = $this->tabelaAcao[$estadoAtual][$tokenAtual] ?? null;
-
-            if ($acao === null) {
-                throw new Exception("Erro sintático: token inesperado '{$tokenAtual}'");
+            if (!isset($this->actionTable[$estadoAtual][$nomeToken])) {
+                throw new Exception("Erro de sintaxe na linha " . $tokenAtual->getLine() . ", token inesperado: " . $nomeToken);
             }
 
-            if (strpos($acao, 'SHIFT') === 0) {
-                // SHIFT: adiciona estado na pilha e avança no token
-                $novoEstado = intval(substr($acao, 6));
-                $this->pilha[] = $tokenAtual;
-                $this->pilha[] = $novoEstado;
-                $indiceToken++;
-            } elseif (strpos($acao, 'REDUCE') === 0) {
-                // REDUCE: aplica uma produção e reduz
-                $producaoIndex = intval(substr($acao, 7));
-                $producao = $this->gramatica[$producaoIndex];
-                $simbolos = explode(' ', $producao['corpo']);
+            $acao = $this->actionTable[$estadoAtual][$nomeToken];
 
-                for ($i = 0; $i < count($simbolos) * 2; $i++) {
-                    array_pop($this->pilha);
+            if ($acao['type'] === 'SHIFT') {
+                $pilha[] = $acao['state'];
+                $indice++;
+            } elseif ($acao['type'] === 'REDUCE') {
+                $regra = $this->producoes[$acao['rule']];
+
+                for ($i = 0; $i < $regra[1]; $i++) {
+                    array_pop($pilha);
                 }
 
-                $estadoReduzido = end($this->pilha);
-                $this->pilha[] = $producao['cabeca'];
+                $estadoTopo = end($pilha);
+                $estadoGoto = $this->gotoTable[$estadoTopo][$regra[0]] ?? null;
 
-                $novoEstado = $this->tabelaIrPara[$estadoReduzido][$producao['cabeca']] ?? null;
-
-                if ($novoEstado === null) {
-                    throw new Exception("Erro ao reduzir: símbolo não esperado '{$producao['cabeca']}'");
+                if ($estadoGoto === null) {
+                    throw new Exception("Erro ao aplicar redução na linha " . $tokenAtual->getLine());
                 }
 
-                $this->pilha[] = $novoEstado;
-            } elseif ($acao === 'ACCEPT') {
-                // ACCEPT: análise concluída com sucesso
-                return "Análise sintática concluída com sucesso.";
-            } else {
-                throw new Exception("Erro sintático: ação desconhecida '{$acao}'");
+                $pilha[] = $estadoGoto;
+            } elseif ($acao['type'] === 'ACCEPT') {
+                return true;
             }
         }
     }
 }
+
+?>
