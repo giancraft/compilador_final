@@ -1,6 +1,6 @@
 <?php 
     $dom = new DOMDocument();
-    @$dom->loadHTMLFile('.././automato/tabela.html');
+    @$dom->loadHTMLFile('./tabela_sintatica/tabela_sintatica.html');
     $tabelas = $dom->getElementsByTagName('table');
     if ($tabelas->length == 0) {
         throw new Exception("Nenhuma tabela encontrada no arquivo HTML.");
@@ -32,7 +32,7 @@
         }
         $jsonArray[] = $estadoArray;
     }
-    $file = fopen(".././automato/tabela.json", "w");
+    $file = fopen("./tabela_sintatica/tabela_sintatica.json", "w");
     fwrite($file, json_encode($jsonArray));
     fclose($file);
 ?>
