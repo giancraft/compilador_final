@@ -1,15 +1,15 @@
 <?php
 
-class AnalisadorLexico
-{
+require_once 'token.php';
+
+class AnalisadorLexico {
     private $tabelaTransicoes;
     private $entrada;
     private $posicao;
     private $tokens;
     private $estadoAtual;
 
-    public function __construct($entrada, $jsonPath)
-    {
+    public function __construct(string $entrada, string $jsonPath) {
         $this->entrada = $entrada;
         $this->posicao = 0;
         $this->tokens = [];
@@ -17,8 +17,7 @@ class AnalisadorLexico
         $this->tabelaTransicoes = $this->carregarTabelaTransicoes($jsonPath);
     }
 
-    private function carregarTabelaTransicoes($jsonPath)
-    {
+    private function carregarTabelaTransicoes(string $jsonPath): array {
         if (!file_exists($jsonPath)) {
             throw new Exception("Tabela JSON não encontrada.");
         }
@@ -33,8 +32,7 @@ class AnalisadorLexico
         return $tabela;
     }
 
-    public function analisar()
-    {
+    public function analisar(): array {
         $linha = 1;
         $coluna = 1;
         $buffer = '';
@@ -48,7 +46,6 @@ class AnalisadorLexico
                 throw new Exception("Erro léxico: estado inválido '{$estadoAtual}' na linha {$linha}, coluna {$coluna}.");
             }
 
-            // Ignorar espaços e quebras de linha
             if (ctype_space($caractere)) {
                 if ($caractere === "\n") {
                     $linha++;
@@ -57,7 +54,6 @@ class AnalisadorLexico
                     $coluna++;
                 }
 
-                // Processar token no buffer, se houver
                 if (!empty($buffer) && isset($this->tabelaTransicoes[$estadoAtual]['token'])) {
                     $this->adicionarToken($estadoAtual, $buffer, $linha, $coluna - strlen($buffer));
                     $buffer = '';
@@ -68,11 +64,9 @@ class AnalisadorLexico
                 continue;
             }
 
-            // Verifica o próximo estado com base no caractere
             $proxEstado = $transicoes[$caractere] ?? $transicoes['DEFAULT'] ?? null;
 
             if ($proxEstado === null) {
-                // Processa o token acumulado no buffer
                 if (!empty($buffer) && isset($this->tabelaTransicoes[$estadoAtual]['token'])) {
                     $this->adicionarToken($estadoAtual, $buffer, $linha, $coluna - strlen($buffer));
                     $buffer = '';
@@ -83,14 +77,12 @@ class AnalisadorLexico
                 throw new Exception("Erro léxico: caractere inesperado '{$caractere}' na linha {$linha}, coluna {$coluna}.");
             }
 
-            // Continua no próximo estado
             $estadoAtual = $proxEstado;
             $buffer .= $caractere;
             $this->posicao++;
             $coluna++;
         }
 
-        // Processa o último token, se houver
         if (!empty($buffer) && isset($this->tabelaTransicoes[$estadoAtual]['token'])) {
             $this->adicionarToken($estadoAtual, $buffer, $linha, $coluna - strlen($buffer));
         }
@@ -98,17 +90,11 @@ class AnalisadorLexico
         return $this->tokens;
     }
 
-    private function adicionarToken($estadoAtual, $valor, $linha, $coluna)
-    {
+    private function adicionarToken($estadoAtual, string $valor, int $linha, int $coluna): void {
         $tokenInfo = $this->tabelaTransicoes[$estadoAtual]['token'] ?? null;
 
         if ($tokenInfo !== null) {
-            $this->tokens[] = [
-                'token' => $tokenInfo,
-                'valor' => $valor,
-                'linha' => $linha,
-                'coluna' => $coluna,
-            ];
+            $this->tokens[] = new Token($tokenInfo, $valor, $coluna, $linha);
         }
     }
 }
