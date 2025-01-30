@@ -135,29 +135,53 @@ class AnalisadorSemantico
     }
 
     // Função para validar tipos na atribuição
-    private function verificarTipoAtribuicao(Token $variavelToken, int $indice): void
-    {
+    private function verificarTipoAtribuicao(Token $variavelToken, int $indice): void {
         $nomeVar = $variavelToken->getLexeme();
         $variavelSimbolo = $this->buscarSimbolo($nomeVar, 'variavel');
-
+    
         if (!$variavelSimbolo) {
             $this->erros[] = "Variável '{$nomeVar}' não declarada (Linha {$variavelToken->getLine()})";
             return;
         }
-
-        $tipoVariavel = $variavelSimbolo['tipo'];
-
-        $valorToken = $this->tokens[$indice + 2] ?? null; 
-
-        if (!$valorToken) {
-            return; 
+    
+        // Encontra todos os tokens da expressão à direita até o próximo ';' ou fim
+        $expressaoTokens = [];
+        $nivel = 0;
+        for ($i = $indice + 2; $i < count($this->tokens); $i++) {
+            $token = $this->tokens[$i];
+            if ($token->getName() === 'PV' && $nivel === 0) break;
+            if ($token->getName() === 'ABRE_PAR') $nivel++;
+            if ($token->getName() === 'FECHA_PAR') $nivel--;
+            $expressaoTokens[] = $token;
         }
-
-        $tipoValor = $this->determinarTipoValor($valorToken);
-
-        if ($tipoValor && !$this->tiposCompativeis($tipoVariavel, $tipoValor)) {
-            $this->erros[] = "Erro semântico: A variável '{$nomeVar}' do tipo '{$tipoVariavel}' não pode receber um valor do tipo '{$tipoValor}' (Linha {$variavelToken->getLine()})";
+    
+        $tipoExpressao = $this->determinarTipoExpressao($expressaoTokens);
+    
+        if ($tipoExpressao && !$this->tiposCompativeis($variavelSimbolo['tipo'], $tipoExpressao)) {
+            $this->erros[] = "Erro semântico: '{$nomeVar}' ({$variavelSimbolo['tipo']}) recebe tipo incompatível ($tipoExpressao) (Linha {$variavelToken->getLine()})";
         }
+    }
+
+    private function determinarTipoExpressao(array $tokens): ?string {
+        $tipos = [];
+        foreach ($tokens as $token) {
+            if ($token->getName() === 'ID') {
+                $simbolo = $this->buscarSimbolo($token->getLexeme(), 'variavel');
+                $tipos[] = $simbolo['tipo'] ?? 'DESCONHECIDO';
+            } elseif ($token->getName() === 'CONST') {
+                $tipos[] = 'INT';
+            } elseif ($token->getName() === 'DECIMAL') {
+                $tipos[] = 'FLOAT';
+            } elseif ($token->getName() === 'CARAC') {
+                $tipos[] = 'CHAR';
+            }
+        }
+    
+        // Lógica simplificada: retorna o tipo mais abrangente
+        if (in_array('FLOAT', $tipos)) return 'FLOAT';
+        if (in_array('INT', $tipos)) return 'INT';
+        if (in_array('CHAR', $tipos)) return 'CHAR';
+        return null;
     }
 
     // Função para determinar o tipo do valor à direita
@@ -174,18 +198,16 @@ class AnalisadorSemantico
     }
 
 
-    private function tiposCompativeis(string $tipoVariavel, string $tipoValor): bool
-    {
-        if ($tipoVariavel === $tipoValor) {
-            return true;
-        }
-
-        if ($tipoVariavel === 'INT' && $tipoValor === 'FLOAT') return false;
-        if ($tipoVariavel === 'FLOAT' && $tipoValor === 'INT') return false;
-
-        if ($tipoVariavel === 'CHAR' && $tipoValor !== 'CHAR') return false;
-
-        return true; 
+    private function tiposCompativeis(string $tipoVariavel, string $tipoExpressao): bool {
+        // Tabela de compatibilidade
+        $compatibilidade = [
+            'INT' => ['INT'], // INT aceita INT ou FLOAT (conversão implícita)
+            'FLOAT' => ['FLOAT'],
+            'CHAR' => ['CHAR'],
+            'ARRAY' => ['ARRAY']
+        ];
+    
+        return in_array($tipoExpressao, $compatibilidade[$tipoVariavel] ?? []);
     }
 
     private function verificarUsoVariavel(Token $token, int $indice): void
