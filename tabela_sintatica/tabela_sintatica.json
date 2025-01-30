@@ -3,20 +3,22 @@
         "0": {
             "<PROGRAMA>": 1
         },
-        "4": {
-            "<VAR>": 6,
-            "<VARS>": 5,
-            "<TIPO>": 7
+        "3": {
+            "<VARS>": 4,
+            "<TIPO>": 6,
+            "<PARAMETROS>": 5
         },
-        "6": {
-            "<VAR>": 6,
-            "<VARS>": 13,
-            "<TIPO>": 7
+        "5": {
+            "<VARS>": 12,
+            "<TIPO>": 6,
+            "<PARAMETROS>": 5
         },
-        "15": {
-            "<COMANDO>": 18,
-            "<COMANDOS>": 17,
-            "<ATRIBUICAO>": 19,
+        "14": {
+            "<VAR>": 19,
+            "<TIPO>": 28,
+            "<COMANDO>": 17,
+            "<COMANDOS>": 16,
+            "<ATRIBUICAO>": 18,
             "<LEITURA>": 20,
             "<IMPRESSAO>": 21,
             "<RETORNO>": 22,
@@ -25,10 +27,12 @@
             "<FOR>": 25,
             "<WHILE>": 26
         },
-        "18": {
-            "<COMANDO>": 18,
-            "<COMANDOS>": 35,
-            "<ATRIBUICAO>": 19,
+        "17": {
+            "<VAR>": 19,
+            "<TIPO>": 28,
+            "<COMANDO>": 17,
+            "<COMANDOS>": 37,
+            "<ATRIBUICAO>": 18,
             "<LEITURA>": 20,
             "<IMPRESSAO>": 21,
             "<RETORNO>": 22,
@@ -37,96 +41,77 @@
             "<FOR>": 25,
             "<WHILE>": 26
         },
-        "30": {
-            "<EXPRESSAO>": 40,
-            "<TERMO>": 41,
-            "<FATOR>": 42
+        "28": {
+            "<ATRIBUICAO>": 40
         },
-        "36": {
-            "<EXPRESSAO>": 49,
-            "<TERMO>": 41,
-            "<FATOR>": 42
+        "31": {
+            "<EXPRESSAO>": 43,
+            "<TERMO>": 44,
+            "<FATOR>": 45
         },
-        "37": {
-            "<EXPRESSAO>": 51,
-            "<TERMO>": 41,
-            "<FATOR>": 42,
-            "<LISTA_ARGUMENTOS>": 50
+        "32": {
+            "<TIPO>": 51
         },
-        "39": {
-            "<EXPRESSAO>": 53,
-            "<TERMO>": 41,
-            "<FATOR>": 42
-        },
-        "41": {
-            "<OPERADOR_LOGICO>": 56,
-            "<EXPRESSAO_REST>": 55
+        "38": {
+            "<EXPRESSAO>": 55,
+            "<TERMO>": 44,
+            "<FATOR>": 45
         },
         "42": {
-            "<TERMO_REST>": 63,
-            "<OPERADOR_ARITMETICO>": 64
+            "<EXPRESSAO>": 58,
+            "<TERMO>": 44,
+            "<FATOR>": 45
+        },
+        "44": {
+            "<OPERADOR_LOGICO>": 61,
+            "<EXPRESSAO_REST>": 60
         },
         "45": {
-            "<EXPRESSAO>": 70,
-            "<TERMO>": 41,
-            "<FATOR>": 42
-        },
-        "46": {
-            "<EXPRESSAO>": 71,
-            "<TERMO>": 41,
-            "<FATOR>": 42
-        },
-        "47": {
-            "<ATRIBUICAO>": 72
+            "<TERMO_REST>": 68,
+            "<OPERADOR_ARITMETICO>": 69
         },
         "48": {
-            "<EXPRESSAO>": 74,
-            "<TERMO>": 41,
-            "<FATOR>": 42
+            "<EXPRESSAO>": 75,
+            "<TERMO>": 44,
+            "<FATOR>": 45
         },
-        "51": {
-            "<LISTA_ARGUMENTOS_REST>": 77
+        "52": {
+            "<EXPRESSAO>": 77,
+            "<TERMO>": 44,
+            "<FATOR>": 45
         },
-        "56": {
-            "<TERMO>": 81,
-            "<FATOR>": 42
+        "53": {
+            "<ATRIBUICAO>": 78
         },
-        "64": {
-            "<FATOR>": 82
+        "54": {
+            "<EXPRESSAO>": 79,
+            "<TERMO>": 44,
+            "<FATOR>": 45
         },
-        "72": {
-            "<EXPRESSAO>": 86,
-            "<TERMO>": 41,
-            "<FATOR>": 42,
-            "<CONDICAO>": 85
+        "61": {
+            "<TERMO>": 83,
+            "<FATOR>": 45
+        },
+        "69": {
+            "<FATOR>": 84
         },
         "78": {
             "<EXPRESSAO>": 89,
-            "<TERMO>": 41,
-            "<FATOR>": 42
+            "<TERMO>": 44,
+            "<FATOR>": 45,
+            "<CONDICAO>": 88
         },
-        "89": {
-            "<LISTA_ARGUMENTOS_REST>": 95
-        },
-        "92": {
-            "<COMANDO>": 18,
-            "<COMANDOS>": 96,
-            "<ATRIBUICAO>": 19,
-            "<LEITURA>": 20,
-            "<IMPRESSAO>": 21,
-            "<RETORNO>": 22,
-            "<CHAMADA_FUNCAO>": 23,
-            "<IF>": 24,
-            "<FOR>": 25,
-            "<WHILE>": 26
-        },
-        "93": {
-            "<ATRIBUICAO>": 97
+        "86": {
+            "<VARS>": 93,
+            "<TIPO>": 6,
+            "<PARAMETROS>": 5
         },
         "94": {
-            "<COMANDO>": 18,
+            "<VAR>": 19,
+            "<TIPO>": 28,
+            "<COMANDO>": 17,
             "<COMANDOS>": 98,
-            "<ATRIBUICAO>": 19,
+            "<ATRIBUICAO>": 18,
             "<LEITURA>": 20,
             "<IMPRESSAO>": 21,
             "<RETORNO>": 22,
@@ -135,10 +120,15 @@
             "<FOR>": 25,
             "<WHILE>": 26
         },
-        "103": {
-            "<COMANDO>": 18,
-            "<COMANDOS>": 105,
-            "<ATRIBUICAO>": 19,
+        "95": {
+            "<INCREMENTA>": 99
+        },
+        "96": {
+            "<VAR>": 19,
+            "<TIPO>": 28,
+            "<COMANDO>": 17,
+            "<COMANDOS>": 101,
+            "<ATRIBUICAO>": 18,
             "<LEITURA>": 20,
             "<IMPRESSAO>": 21,
             "<RETORNO>": 22,
@@ -147,10 +137,46 @@
             "<FOR>": 25,
             "<WHILE>": 26
         },
-        "104": {
-            "<COMANDO>": 18,
-            "<COMANDOS>": 106,
-            "<ATRIBUICAO>": 19,
+        "102": {
+            "<VAR>": 19,
+            "<TIPO>": 28,
+            "<COMANDO>": 17,
+            "<COMANDOS>": 107,
+            "<ATRIBUICAO>": 18,
+            "<LEITURA>": 20,
+            "<IMPRESSAO>": 21,
+            "<RETORNO>": 22,
+            "<CHAMADA_FUNCAO>": 23,
+            "<IF>": 24,
+            "<FOR>": 25,
+            "<WHILE>": 26
+        },
+        "107": {
+            "<RETORNO>": 111
+        },
+        "109": {
+            "<VAR>": 19,
+            "<TIPO>": 28,
+            "<COMANDO>": 17,
+            "<COMANDOS>": 113,
+            "<ATRIBUICAO>": 18,
+            "<LEITURA>": 20,
+            "<IMPRESSAO>": 21,
+            "<RETORNO>": 22,
+            "<CHAMADA_FUNCAO>": 23,
+            "<IF>": 24,
+            "<FOR>": 25,
+            "<WHILE>": 26
+        },
+        "110": {
+            "<OPERADOR_ARITMETICO>": 114
+        },
+        "112": {
+            "<VAR>": 19,
+            "<TIPO>": 28,
+            "<COMANDO>": 17,
+            "<COMANDOS>": 116,
+            "<ATRIBUICAO>": 18,
             "<LEITURA>": 20,
             "<IMPRESSAO>": 21,
             "<RETORNO>": 22,
@@ -173,15 +199,37 @@
             }
         },
         {
-            "ID": {
+            "ABRE_PAR": {
                 "type": "SHIFT",
                 "state": 3
             }
         },
         {
-            "ABRE_PAR": {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "INT": {
                 "type": "SHIFT",
-                "state": 4
+                "state": 7
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "SHIFT",
+                "state": 11
             }
         },
         {
@@ -191,59 +239,25 @@
             },
             "INT": {
                 "type": "SHIFT",
-                "state": 8
+                "state": 7
             },
             "CHAR": {
                 "type": "SHIFT",
-                "state": 9
-            },
-            "FLOAT": {
-                "type": "SHIFT",
-                "state": 10
-            },
-            "ARRAY": {
-                "type": "SHIFT",
-                "state": 11
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "SHIFT",
-                "state": 12
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 2
-            },
-            "INT": {
-                "type": "SHIFT",
                 "state": 8
             },
-            "CHAR": {
+            "FLOAT": {
                 "type": "SHIFT",
                 "state": 9
             },
-            "FLOAT": {
-                "type": "SHIFT",
-                "state": 10
-            },
             "ARRAY": {
                 "type": "SHIFT",
-                "state": 11
+                "state": 10
             }
         },
         {
             "ID": {
                 "type": "SHIFT",
-                "state": 14
-            }
-        },
-        {
-            "ID": {
-                "type": "REDUCE",
-                "rule": 4
+                "state": 13
             }
         },
         {
@@ -265,9 +279,15 @@
             }
         },
         {
+            "ID": {
+                "type": "REDUCE",
+                "rule": 8
+            }
+        },
+        {
             "ABRE_CHAVES": {
                 "type": "SHIFT",
-                "state": 15
+                "state": 14
             }
         },
         {
@@ -277,39 +297,79 @@
             }
         },
         {
-            "PV": {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 57
+            },
+            "VIRGULA": {
                 "type": "SHIFT",
-                "state": 16
+                "state": 15
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 57
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 57
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 57
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 57
             }
         },
         {
             "FECHA_CHAVES": {
                 "type": "REDUCE",
-                "rule": 9
+                "rule": 10
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 7
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
             },
             "IF": {
                 "type": "SHIFT",
-                "state": 31
+                "state": 33
             },
             "WHILE": {
                 "type": "SHIFT",
-                "state": 33
+                "state": 35
             },
             "FOR": {
                 "type": "SHIFT",
-                "state": 32
+                "state": 34
             },
             "PRINT": {
                 "type": "SHIFT",
-                "state": 29
+                "state": 30
             },
             "READ": {
                 "type": "SHIFT",
-                "state": 28
+                "state": 29
             },
             "RETURN": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "FUNCTION": {
                 "type": "SHIFT",
-                "state": 30
+                "state": 32
             },
             "ID": {
                 "type": "SHIFT",
@@ -318,6 +378,1204 @@
         },
         {
             "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 56
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "SHIFT",
+                "state": 36
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 7
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
+            },
+            "IF": {
+                "type": "SHIFT",
+                "state": 33
+            },
+            "WHILE": {
+                "type": "SHIFT",
+                "state": 35
+            },
+            "FOR": {
+                "type": "SHIFT",
+                "state": 34
+            },
+            "PRINT": {
+                "type": "SHIFT",
+                "state": 30
+            },
+            "READ": {
+                "type": "SHIFT",
+                "state": 29
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "FUNCTION": {
+                "type": "SHIFT",
+                "state": 32
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 27
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 11
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 12
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 13
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 14
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 15
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 16
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 17
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 18
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 19
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 19
+            }
+        },
+        {
+            "ATR": {
+                "type": "SHIFT",
+                "state": 38
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 39
+            }
+        },
+        {
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 41
+            }
+        },
+        {
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 42
+            }
+        },
+        {
+            "CONST": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "DECIMAL": {
+                "type": "SHIFT",
+                "state": 49
+            },
+            "CARAC": {
+                "type": "SHIFT",
+                "state": 50
+            },
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 46
+            }
+        },
+        {
+            "INT": {
+                "type": "SHIFT",
+                "state": 7
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
+            }
+        },
+        {
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 52
+            }
+        },
+        {
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 53
+            }
+        },
+        {
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 54
+            }
+        },
+        {
+            "$": {
+                "type": "REDUCE",
+                "rule": 0
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 9
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 9
+            }
+        },
+        {
+            "CONST": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "DECIMAL": {
+                "type": "SHIFT",
+                "state": 49
+            },
+            "CARAC": {
+                "type": "SHIFT",
+                "state": 50
+            },
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 46
+            }
+        },
+        {
+            "ATR": {
+                "type": "SHIFT",
+                "state": 38
+            },
+            "PV": {
+                "type": "SHIFT",
+                "state": 56
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 4
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 4
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 57
+            }
+        },
+        {
+            "CONST": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "DECIMAL": {
+                "type": "SHIFT",
+                "state": 49
+            },
+            "CARAC": {
+                "type": "SHIFT",
+                "state": 50
+            },
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 46
+            }
+        },
+        {
+            "PV": {
+                "type": "SHIFT",
+                "state": 59
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 36
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 36
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 36
+            },
+            "COMP": {
+                "type": "SHIFT",
+                "state": 62
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 63
+            },
+            "MAIOR": {
+                "type": "SHIFT",
+                "state": 65
+            },
+            "MENOR": {
+                "type": "SHIFT",
+                "state": 64
+            },
+            "MAIORIGUAL": {
+                "type": "SHIFT",
+                "state": 67
+            },
+            "MENORIGUAL": {
+                "type": "SHIFT",
+                "state": 66
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "COMP": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "MAIOR": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "MENOR": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "MAIORIGUAL": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "MENORIGUAL": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "SOMA": {
+                "type": "SHIFT",
+                "state": 70
+            },
+            "SUBTRACAO": {
+                "type": "SHIFT",
+                "state": 71
+            },
+            "DIVISAO": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "MULTIPLICACAO": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "MODULO": {
+                "type": "SHIFT",
+                "state": 74
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "COMP": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MAIOR": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MENOR": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MAIORIGUAL": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MENORIGUAL": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "SOMA": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "SUBTRACAO": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "DIVISAO": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MULTIPLICACAO": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MODULO": {
+                "type": "REDUCE",
+                "rule": 51
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "COMP": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "MAIOR": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "MENOR": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "MAIORIGUAL": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "MENORIGUAL": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "SOMA": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "SUBTRACAO": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "DIVISAO": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "MULTIPLICACAO": {
+                "type": "REDUCE",
+                "rule": 52
+            },
+            "MODULO": {
+                "type": "REDUCE",
+                "rule": 52
+            }
+        },
+        {
+            "CONST": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "DECIMAL": {
+                "type": "SHIFT",
+                "state": 49
+            },
+            "CARAC": {
+                "type": "SHIFT",
+                "state": 50
+            },
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 46
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "COMP": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MAIOR": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MENOR": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MAIORIGUAL": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MENORIGUAL": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "SOMA": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "SUBTRACAO": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "DIVISAO": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MULTIPLICACAO": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MODULO": {
+                "type": "REDUCE",
+                "rule": 54
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "COMP": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MAIOR": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MENOR": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MAIORIGUAL": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MENORIGUAL": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "SOMA": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "SUBTRACAO": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "DIVISAO": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MULTIPLICACAO": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MODULO": {
+                "type": "REDUCE",
+                "rule": 55
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 76
+            }
+        },
+        {
+            "CONST": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "DECIMAL": {
+                "type": "SHIFT",
+                "state": 49
+            },
+            "CARAC": {
+                "type": "SHIFT",
+                "state": 50
+            },
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 46
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 27
+            }
+        },
+        {
+            "CONST": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "DECIMAL": {
+                "type": "SHIFT",
+                "state": 49
+            },
+            "CARAC": {
+                "type": "SHIFT",
+                "state": 50
+            },
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 46
+            }
+        },
+        {
+            "PV": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FECHA_CHAVES": {
                 "type": "REDUCE",
                 "rule": 3
             },
@@ -336,966 +1594,344 @@
             "ARRAY": {
                 "type": "REDUCE",
                 "rule": 3
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "SHIFT",
-                "state": 34
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 9
-            },
-            "IF": {
-                "type": "SHIFT",
-                "state": 31
-            },
-            "WHILE": {
-                "type": "SHIFT",
-                "state": 33
-            },
-            "FOR": {
-                "type": "SHIFT",
-                "state": 32
-            },
-            "PRINT": {
-                "type": "SHIFT",
-                "state": 29
-            },
-            "READ": {
-                "type": "SHIFT",
-                "state": 28
-            },
-            "RETURN": {
-                "type": "SHIFT",
-                "state": 30
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 27
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 10
             },
             "IF": {
                 "type": "REDUCE",
-                "rule": 10
+                "rule": 3
             },
             "WHILE": {
                 "type": "REDUCE",
-                "rule": 10
+                "rule": 3
             },
             "FOR": {
                 "type": "REDUCE",
-                "rule": 10
+                "rule": 3
             },
             "PRINT": {
                 "type": "REDUCE",
-                "rule": 10
+                "rule": 3
             },
             "READ": {
                 "type": "REDUCE",
-                "rule": 10
+                "rule": 3
             },
             "RETURN": {
                 "type": "REDUCE",
-                "rule": 10
+                "rule": 3
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 3
             },
             "ID": {
                 "type": "REDUCE",
-                "rule": 10
+                "rule": 3
             }
         },
         {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 11
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 12
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 13
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 14
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 15
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 16
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 17
-            }
-        },
-        {
-            "ATR": {
+            "FECHA_PAR": {
                 "type": "SHIFT",
-                "state": 36
+                "state": 81
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "SHIFT",
+                "state": 82
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 23
             },
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 37
+            "INT": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 23
             }
         },
         {
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 39
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 34
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 34
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 34
             }
         },
         {
             "CONST": {
                 "type": "SHIFT",
-                "state": 44
+                "state": 47
+            },
+            "DECIMAL": {
+                "type": "SHIFT",
+                "state": 49
+            },
+            "CARAC": {
+                "type": "SHIFT",
+                "state": 50
             },
             "ABRE_PAR": {
                 "type": "SHIFT",
-                "state": 45
+                "state": 48
             },
             "ID": {
-                "type": "SHIFT",
-                "state": 43
-            }
-        },
-        {
-            "ABRE_PAR": {
                 "type": "SHIFT",
                 "state": 46
             }
         },
         {
+            "CONST": {
+                "type": "REDUCE",
+                "rule": 37
+            },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 37
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 37
+            },
             "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 47
+                "type": "REDUCE",
+                "rule": 37
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 37
             }
         },
         {
+            "CONST": {
+                "type": "REDUCE",
+                "rule": 38
+            },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 38
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 38
+            },
+            "ABRE_PAR": {
+                "type": "REDUCE",
+                "rule": 38
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 38
+            }
+        },
+        {
+            "CONST": {
+                "type": "REDUCE",
+                "rule": 39
+            },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 39
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 39
+            },
+            "ABRE_PAR": {
+                "type": "REDUCE",
+                "rule": 39
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 39
+            }
+        },
+        {
+            "CONST": {
+                "type": "REDUCE",
+                "rule": 40
+            },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 40
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 40
+            },
+            "ABRE_PAR": {
+                "type": "REDUCE",
+                "rule": 40
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 40
+            }
+        },
+        {
+            "CONST": {
+                "type": "REDUCE",
+                "rule": 41
+            },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 41
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 41
+            },
+            "ABRE_PAR": {
+                "type": "REDUCE",
+                "rule": 41
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 41
+            }
+        },
+        {
+            "CONST": {
+                "type": "REDUCE",
+                "rule": 42
+            },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 42
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 42
+            },
+            "ABRE_PAR": {
+                "type": "REDUCE",
+                "rule": 42
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 42
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "COMP": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "MAIOR": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "MENOR": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "MAIORIGUAL": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "MENORIGUAL": {
+                "type": "REDUCE",
+                "rule": 43
+            }
+        },
+        {
+            "CONST": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "DECIMAL": {
+                "type": "SHIFT",
+                "state": 49
+            },
+            "CARAC": {
+                "type": "SHIFT",
+                "state": 50
+            },
             "ABRE_PAR": {
                 "type": "SHIFT",
                 "state": 48
-            }
-        },
-        {
-            "$": {
-                "type": "REDUCE",
-                "rule": 0
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 8
-            }
-        },
-        {
-            "CONST": {
-                "type": "SHIFT",
-                "state": 44
-            },
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
             },
             "ID": {
                 "type": "SHIFT",
-                "state": 43
-            }
-        },
-        {
-            "CONST": {
-                "type": "SHIFT",
-                "state": 44
-            },
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
-            },
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 24
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 43
-            }
-        },
-        {
-            "ID": {
-                "type": "SHIFT",
-                "state": 52
-            }
-        },
-        {
-            "CONST": {
-                "type": "SHIFT",
-                "state": 44
-            },
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 43
-            }
-        },
-        {
-            "PV": {
-                "type": "SHIFT",
-                "state": 54
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 34
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 34
-            },
-            "VIRGULA": {
-                "type": "REDUCE",
-                "rule": 34
-            },
-            "COMP": {
-                "type": "SHIFT",
-                "state": 57
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 58
-            },
-            "MAIOR": {
-                "type": "SHIFT",
-                "state": 60
-            },
-            "MENOR": {
-                "type": "SHIFT",
-                "state": 59
-            },
-            "MAIORIGUAL": {
-                "type": "SHIFT",
-                "state": 62
-            },
-            "MENORIGUAL": {
-                "type": "SHIFT",
-                "state": 61
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "VIRGULA": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "COMP": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "MAIOR": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "MENOR": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "MAIORIGUAL": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "MENORIGUAL": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "SOMA": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "SUBTRACAO": {
-                "type": "SHIFT",
-                "state": 66
-            },
-            "DIVISAO": {
-                "type": "SHIFT",
-                "state": 68
-            },
-            "MULTIPLICACAO": {
-                "type": "SHIFT",
-                "state": 67
-            },
-            "MODULO": {
-                "type": "SHIFT",
-                "state": 69
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "VIRGULA": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "COMP": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "MAIOR": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "MENOR": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "MAIORIGUAL": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "MENORIGUAL": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "SOMA": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "SUBTRACAO": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "DIVISAO": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "MULTIPLICACAO": {
-                "type": "REDUCE",
-                "rule": 49
-            },
-            "MODULO": {
-                "type": "REDUCE",
-                "rule": 49
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "VIRGULA": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "COMP": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "MAIOR": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "MENOR": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "MAIORIGUAL": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "MENORIGUAL": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "SOMA": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "SUBTRACAO": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "DIVISAO": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "MULTIPLICACAO": {
-                "type": "REDUCE",
-                "rule": 50
-            },
-            "MODULO": {
-                "type": "REDUCE",
-                "rule": 50
-            }
-        },
-        {
-            "CONST": {
-                "type": "SHIFT",
-                "state": 44
-            },
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 43
-            }
-        },
-        {
-            "CONST": {
-                "type": "SHIFT",
-                "state": 44
-            },
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 43
-            }
-        },
-        {
-            "ID": {
-                "type": "SHIFT",
-                "state": 73
-            }
-        },
-        {
-            "CONST": {
-                "type": "SHIFT",
-                "state": 44
-            },
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 43
-            }
-        },
-        {
-            "PV": {
-                "type": "SHIFT",
-                "state": 75
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "SHIFT",
-                "state": 76
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 26
-            },
-            "VIRGULA": {
-                "type": "SHIFT",
-                "state": 78
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "SHIFT",
-                "state": 79
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 21
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 32
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 32
-            },
-            "VIRGULA": {
-                "type": "REDUCE",
-                "rule": 32
-            }
-        },
-        {
-            "CONST": {
-                "type": "SHIFT",
-                "state": 44
-            },
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 43
+                "state": 46
             }
         },
         {
             "CONST": {
                 "type": "REDUCE",
-                "rule": 35
+                "rule": 46
             },
-            "ABRE_PAR": {
+            "DECIMAL": {
                 "type": "REDUCE",
-                "rule": 35
+                "rule": 46
             },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 35
-            }
-        },
-        {
-            "CONST": {
-                "type": "REDUCE",
-                "rule": 36
-            },
-            "ABRE_PAR": {
-                "type": "REDUCE",
-                "rule": 36
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 36
-            }
-        },
-        {
-            "CONST": {
-                "type": "REDUCE",
-                "rule": 37
-            },
-            "ABRE_PAR": {
-                "type": "REDUCE",
-                "rule": 37
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 37
-            }
-        },
-        {
-            "CONST": {
-                "type": "REDUCE",
-                "rule": 38
-            },
-            "ABRE_PAR": {
-                "type": "REDUCE",
-                "rule": 38
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 38
-            }
-        },
-        {
-            "CONST": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "ABRE_PAR": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 39
-            }
-        },
-        {
-            "CONST": {
-                "type": "REDUCE",
-                "rule": 40
-            },
-            "ABRE_PAR": {
-                "type": "REDUCE",
-                "rule": 40
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 40
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "VIRGULA": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "COMP": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "MAIOR": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "MENOR": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "MAIORIGUAL": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "MENORIGUAL": {
-                "type": "REDUCE",
-                "rule": 41
-            }
-        },
-        {
-            "CONST": {
-                "type": "SHIFT",
-                "state": 44
-            },
-            "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 43
-            }
-        },
-        {
-            "CONST": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "ABRE_PAR": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 44
-            }
-        },
-        {
-            "CONST": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "ABRE_PAR": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 45
-            }
-        },
-        {
-            "CONST": {
+            "CARAC": {
                 "type": "REDUCE",
                 "rule": 46
             },
@@ -1313,6 +1949,14 @@
                 "type": "REDUCE",
                 "rule": 47
             },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 47
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 47
+            },
             "ABRE_PAR": {
                 "type": "REDUCE",
                 "rule": 47
@@ -1327,6 +1971,14 @@
                 "type": "REDUCE",
                 "rule": 48
             },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 48
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 48
+            },
             "ABRE_PAR": {
                 "type": "REDUCE",
                 "rule": 48
@@ -1334,38 +1986,62 @@
             "ID": {
                 "type": "REDUCE",
                 "rule": 48
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "SHIFT",
-                "state": 83
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "SHIFT",
-                "state": 84
             }
         },
         {
             "CONST": {
-                "type": "SHIFT",
-                "state": 44
+                "type": "REDUCE",
+                "rule": 49
+            },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 49
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 49
             },
             "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
+                "type": "REDUCE",
+                "rule": 49
             },
             "ID": {
-                "type": "SHIFT",
-                "state": 43
+                "type": "REDUCE",
+                "rule": 49
             }
         },
         {
-            "ATR": {
+            "CONST": {
+                "type": "REDUCE",
+                "rule": 50
+            },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 50
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 50
+            },
+            "ABRE_PAR": {
+                "type": "REDUCE",
+                "rule": 50
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 50
+            }
+        },
+        {
+            "FECHA_PAR": {
                 "type": "SHIFT",
-                "state": 36
+                "state": 85
+            }
+        },
+        {
+            "ABRE_PAR": {
+                "type": "SHIFT",
+                "state": 86
             }
         },
         {
@@ -1376,80 +2052,100 @@
         },
         {
             "CONST": {
-                "type": "REDUCE",
-                "rule": 18
+                "type": "SHIFT",
+                "state": 47
+            },
+            "DECIMAL": {
+                "type": "SHIFT",
+                "state": 49
+            },
+            "CARAC": {
+                "type": "SHIFT",
+                "state": 50
             },
             "ABRE_PAR": {
-                "type": "REDUCE",
-                "rule": 18
-            },
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 18
-            },
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 18
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 18
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 18
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 18
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 18
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 18
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 18
+                "type": "SHIFT",
+                "state": 48
             },
             "ID": {
-                "type": "REDUCE",
-                "rule": 18
-            }
-        },
-        {
-            "PV": {
                 "type": "SHIFT",
-                "state": 88
+                "state": 46
             }
         },
         {
             "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 23
+                "type": "SHIFT",
+                "state": 90
             }
         },
         {
             "CONST": {
-                "type": "SHIFT",
-                "state": 44
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "DECIMAL": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "CARAC": {
+                "type": "REDUCE",
+                "rule": 20
             },
             "ABRE_PAR": {
-                "type": "SHIFT",
-                "state": 45
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 20
             },
             "ID": {
-                "type": "SHIFT",
-                "state": 43
-            }
-        },
-        {
-            "PV": {
-                "type": "SHIFT",
-                "state": 90
+                "type": "REDUCE",
+                "rule": 20
             }
         },
         {
@@ -1459,131 +2155,141 @@
             }
         },
         {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 33
-            },
             "PV": {
-                "type": "REDUCE",
-                "rule": 33
-            },
-            "VIRGULA": {
-                "type": "REDUCE",
-                "rule": 33
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "VIRGULA": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "COMP": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "MAIOR": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "MENOR": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "MAIORIGUAL": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "MENORIGUAL": {
-                "type": "REDUCE",
-                "rule": 42
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "VIRGULA": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "COMP": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "MAIOR": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "MENOR": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "MAIORIGUAL": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "MENORIGUAL": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "SOMA": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "SUBTRACAO": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "DIVISAO": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "MULTIPLICACAO": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "MODULO": {
-                "type": "REDUCE",
-                "rule": 51
-            }
-        },
-        {
-            "ABRE_CHAVES": {
                 "type": "SHIFT",
                 "state": 92
             }
         },
         {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 35
+            },
             "PV": {
-                "type": "SHIFT",
-                "state": 93
+                "type": "REDUCE",
+                "rule": 35
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 35
             }
         },
         {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 44
+            },
             "PV": {
                 "type": "REDUCE",
-                "rule": 30
+                "rule": 44
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 44
+            },
+            "COMP": {
+                "type": "REDUCE",
+                "rule": 44
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 44
+            },
+            "MAIOR": {
+                "type": "REDUCE",
+                "rule": 44
+            },
+            "MENOR": {
+                "type": "REDUCE",
+                "rule": 44
+            },
+            "MAIORIGUAL": {
+                "type": "REDUCE",
+                "rule": 44
+            },
+            "MENORIGUAL": {
+                "type": "REDUCE",
+                "rule": 44
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "VIRGULA": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "COMP": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "MAIOR": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "MENOR": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "MAIORIGUAL": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "MENORIGUAL": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "SOMA": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "SUBTRACAO": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "DIVISAO": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "MULTIPLICACAO": {
+                "type": "REDUCE",
+                "rule": 53
+            },
+            "MODULO": {
+                "type": "REDUCE",
+                "rule": 53
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 7
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
             }
         },
         {
@@ -1593,7 +2299,95 @@
             }
         },
         {
+            "PV": {
+                "type": "SHIFT",
+                "state": 95
+            }
+        },
+        {
+            "PV": {
+                "type": "REDUCE",
+                "rule": 32
+            }
+        },
+        {
+            "ABRE_CHAVES": {
+                "type": "SHIFT",
+                "state": 96
+            }
+        },
+        {
             "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 21
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "ARRAY": {
                 "type": "REDUCE",
                 "rule": 22
             },
@@ -1618,6 +2412,10 @@
                 "rule": 22
             },
             "RETURN": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "FUNCTION": {
                 "type": "REDUCE",
                 "rule": 22
             },
@@ -1628,110 +2426,58 @@
         },
         {
             "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 26
-            },
-            "VIRGULA": {
                 "type": "SHIFT",
-                "state": 78
+                "state": 97
             }
         },
         {
             "FECHA_CHAVES": {
                 "type": "REDUCE",
-                "rule": 19
+                "rule": 10
             },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 19
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 20
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 20
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 20
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 20
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 20
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 20
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 20
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 20
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 9
-            },
-            "IF": {
+            "INT": {
                 "type": "SHIFT",
-                "state": 31
+                "state": 7
             },
-            "WHILE": {
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
+            },
+            "IF": {
                 "type": "SHIFT",
                 "state": 33
             },
+            "WHILE": {
+                "type": "SHIFT",
+                "state": 35
+            },
             "FOR": {
                 "type": "SHIFT",
-                "state": 32
+                "state": 34
             },
             "PRINT": {
                 "type": "SHIFT",
-                "state": 29
+                "state": 30
             },
             "READ": {
                 "type": "SHIFT",
-                "state": 28
+                "state": 29
             },
             "RETURN": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "FUNCTION": {
                 "type": "SHIFT",
-                "state": 30
+                "state": 32
             },
             "ID": {
                 "type": "SHIFT",
@@ -1740,180 +2486,142 @@
         },
         {
             "ID": {
-                "type": "SHIFT",
-                "state": 73
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 9
-            },
-            "IF": {
-                "type": "SHIFT",
-                "state": 31
-            },
-            "WHILE": {
-                "type": "SHIFT",
-                "state": 33
-            },
-            "FOR": {
-                "type": "SHIFT",
-                "state": 32
-            },
-            "PRINT": {
-                "type": "SHIFT",
-                "state": 29
-            },
-            "READ": {
-                "type": "SHIFT",
-                "state": 28
-            },
-            "RETURN": {
-                "type": "SHIFT",
-                "state": 30
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 27
-            }
-        },
-        {
-            "FECHA_PAR": {
-                "type": "REDUCE",
-                "rule": 25
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "SHIFT",
-                "state": 99
-            }
-        },
-        {
-            "FECHA_PAR": {
                 "type": "SHIFT",
                 "state": 100
             }
         },
         {
             "FECHA_CHAVES": {
-                "type": "SHIFT",
-                "state": 101
-            }
-        },
-        {
-            "FECHA_CHAVES": {
                 "type": "REDUCE",
-                "rule": 27
+                "rule": 10
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 7
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
             },
             "IF": {
-                "type": "REDUCE",
-                "rule": 27
-            },
-            "ELSE": {
                 "type": "SHIFT",
-                "state": 102
+                "state": 33
             },
             "WHILE": {
-                "type": "REDUCE",
-                "rule": 27
+                "type": "SHIFT",
+                "state": 35
             },
             "FOR": {
-                "type": "REDUCE",
-                "rule": 27
+                "type": "SHIFT",
+                "state": 34
             },
             "PRINT": {
-                "type": "REDUCE",
-                "rule": 27
+                "type": "SHIFT",
+                "state": 30
             },
             "READ": {
-                "type": "REDUCE",
-                "rule": 27
+                "type": "SHIFT",
+                "state": 29
             },
             "RETURN": {
                 "type": "REDUCE",
-                "rule": 27
+                "rule": 10
+            },
+            "FUNCTION": {
+                "type": "SHIFT",
+                "state": 32
             },
             "ID": {
-                "type": "REDUCE",
-                "rule": 27
+                "type": "SHIFT",
+                "state": 27
             }
         },
         {
             "ABRE_CHAVES": {
+                "type": "SHIFT",
+                "state": 102
+            }
+        },
+        {
+            "FECHA_CHAVES": {
                 "type": "SHIFT",
                 "state": 103
             }
         },
         {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 31
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 31
-            },
-            "WHILE": {
-                "type": "REDUCE",
-                "rule": 31
-            },
-            "FOR": {
-                "type": "REDUCE",
-                "rule": 31
-            },
-            "PRINT": {
-                "type": "REDUCE",
-                "rule": 31
-            },
-            "READ": {
-                "type": "REDUCE",
-                "rule": 31
-            },
-            "RETURN": {
-                "type": "REDUCE",
-                "rule": 31
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 31
-            }
-        },
-        {
-            "ABRE_CHAVES": {
+            "FECHA_PAR": {
                 "type": "SHIFT",
                 "state": 104
             }
         },
         {
+            "ATR": {
+                "type": "SHIFT",
+                "state": 105
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "SHIFT",
+                "state": 106
+            }
+        },
+        {
             "FECHA_CHAVES": {
                 "type": "REDUCE",
-                "rule": 9
+                "rule": 10
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 7
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
             },
             "IF": {
                 "type": "SHIFT",
-                "state": 31
+                "state": 33
             },
             "WHILE": {
                 "type": "SHIFT",
-                "state": 33
+                "state": 35
             },
             "FOR": {
                 "type": "SHIFT",
-                "state": 32
+                "state": 34
             },
             "PRINT": {
                 "type": "SHIFT",
-                "state": 29
+                "state": 30
             },
             "READ": {
                 "type": "SHIFT",
-                "state": 28
+                "state": 29
             },
             "RETURN": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "FUNCTION": {
                 "type": "SHIFT",
-                "state": 30
+                "state": 32
             },
             "ID": {
                 "type": "SHIFT",
@@ -1923,57 +2631,31 @@
         {
             "FECHA_CHAVES": {
                 "type": "REDUCE",
-                "rule": 9
+                "rule": 29
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 29
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 29
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 29
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 29
             },
             "IF": {
-                "type": "SHIFT",
-                "state": 31
+                "type": "REDUCE",
+                "rule": 29
             },
-            "WHILE": {
-                "type": "SHIFT",
-                "state": 33
-            },
-            "FOR": {
-                "type": "SHIFT",
-                "state": 32
-            },
-            "PRINT": {
-                "type": "SHIFT",
-                "state": 29
-            },
-            "READ": {
-                "type": "SHIFT",
-                "state": 28
-            },
-            "RETURN": {
-                "type": "SHIFT",
-                "state": 30
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 27
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "SHIFT",
-                "state": 107
-            }
-        },
-        {
-            "FECHA_CHAVES": {
+            "ELSE": {
                 "type": "SHIFT",
                 "state": 108
-            }
-        },
-        {
-            "FECHA_CHAVES": {
-                "type": "REDUCE",
-                "rule": 29
-            },
-            "IF": {
-                "type": "REDUCE",
-                "rule": 29
             },
             "WHILE": {
                 "type": "REDUCE",
@@ -1995,43 +2677,423 @@
                 "type": "REDUCE",
                 "rule": 29
             },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 29
+            },
             "ID": {
                 "type": "REDUCE",
                 "rule": 29
             }
         },
         {
+            "ABRE_CHAVES": {
+                "type": "SHIFT",
+                "state": 109
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 110
+            }
+        },
+        {
             "FECHA_CHAVES": {
                 "type": "REDUCE",
-                "rule": 28
+                "rule": 33
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 33
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 33
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 33
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 33
             },
             "IF": {
                 "type": "REDUCE",
-                "rule": 28
+                "rule": 33
             },
             "WHILE": {
                 "type": "REDUCE",
-                "rule": 28
+                "rule": 33
             },
             "FOR": {
                 "type": "REDUCE",
-                "rule": 28
+                "rule": 33
             },
             "PRINT": {
                 "type": "REDUCE",
-                "rule": 28
+                "rule": 33
             },
             "READ": {
                 "type": "REDUCE",
-                "rule": 28
+                "rule": 33
             },
             "RETURN": {
                 "type": "REDUCE",
-                "rule": 28
+                "rule": 33
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 33
             },
             "ID": {
                 "type": "REDUCE",
-                "rule": 28
+                "rule": 33
+            }
+        },
+        {
+            "RETURN": {
+                "type": "SHIFT",
+                "state": 31
+            }
+        },
+        {
+            "ABRE_CHAVES": {
+                "type": "SHIFT",
+                "state": 112
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 7
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
+            },
+            "IF": {
+                "type": "SHIFT",
+                "state": 33
+            },
+            "WHILE": {
+                "type": "SHIFT",
+                "state": 35
+            },
+            "FOR": {
+                "type": "SHIFT",
+                "state": 34
+            },
+            "PRINT": {
+                "type": "SHIFT",
+                "state": 30
+            },
+            "READ": {
+                "type": "SHIFT",
+                "state": 29
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "FUNCTION": {
+                "type": "SHIFT",
+                "state": 32
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 27
+            }
+        },
+        {
+            "SOMA": {
+                "type": "SHIFT",
+                "state": 70
+            },
+            "SUBTRACAO": {
+                "type": "SHIFT",
+                "state": 71
+            },
+            "DIVISAO": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "MULTIPLICACAO": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "MODULO": {
+                "type": "SHIFT",
+                "state": 74
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "SHIFT",
+                "state": 115
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 7
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 8
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 9
+            },
+            "ARRAY": {
+                "type": "SHIFT",
+                "state": 10
+            },
+            "IF": {
+                "type": "SHIFT",
+                "state": 33
+            },
+            "WHILE": {
+                "type": "SHIFT",
+                "state": 35
+            },
+            "FOR": {
+                "type": "SHIFT",
+                "state": 34
+            },
+            "PRINT": {
+                "type": "SHIFT",
+                "state": 30
+            },
+            "READ": {
+                "type": "SHIFT",
+                "state": 29
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "FUNCTION": {
+                "type": "SHIFT",
+                "state": 32
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 27
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "SHIFT",
+                "state": 117
+            }
+        },
+        {
+            "CONST": {
+                "type": "SHIFT",
+                "state": 118
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 119
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 24
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "SHIFT",
+                "state": 120
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 31
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 58
+            }
+        },
+        {
+            "FECHA_PAR": {
+                "type": "REDUCE",
+                "rule": 59
+            }
+        },
+        {
+            "FECHA_CHAVES": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "ARRAY": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "IF": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "WHILE": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "FOR": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "PRINT": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "READ": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "RETURN": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "FUNCTION": {
+                "type": "REDUCE",
+                "rule": 30
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 30
             }
         }
     ]
