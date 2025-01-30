@@ -149,8 +149,6 @@
                     echo htmlspecialchars($erro) . "\n";
                 }
             }
-
-            // Adicione este código após a seção "Resultado da Análise Sintática"
     
             echo "<h2>Ações Shift/Reduce Executadas:</h2>";
             $acoesExecutadas = $analisadorSintatico->getAcoesExecutadas();
@@ -193,7 +191,6 @@
                 echo "<table>";
                 echo "<tr><th>Nome</th><th>Tipo</th><th>Escopo</th><th>Categoria</th></tr>";
                 foreach ($tabelaSimbolos as $simbolo) {
-                    // Garantir valores padrão para campos não definidos
                     $nome = $simbolo['nome'] ?? '';
                     $tipo = $simbolo['tipo'] ?? '';
                     $escopo = $simbolo['escopo'] ?? '';
@@ -240,7 +237,7 @@
                 );
 
                 echo "<h2>Árvore de Derivação:</h2><div class='arvore'>";
-                $arvoreDerivacao->imprimirHtml(); // Exibe a árvore de derivação
+                $arvoreDerivacao->imprimirHtml();
                 echo "</div>";
             }
         } catch (Exception $e) {
