@@ -18,13 +18,8 @@ class AnalisadorSintatico {
         ["<OPERADOR_ARITMETICO>", 1], ["<FATOR>", 1], ["<FATOR>", 1], ["<FATOR>", 3], ["<FATOR>", 1], ["<FATOR>", 1], ["<PARAMETROS>", 3], ["<PARAMETROS>", 2], ["<INCREMENTA>", 5], ["<INCREMENTA>", 5]
     ];
 
-    private int $contadorEscopos = 0;
-    private ?string $proximoTipoEscopo = null;
-
-    private bool $ignorarProximoAbreChaves = false;
     private string $ultimoEscopo = 'global';
     private int $contadorBlocos = 0;
-    private ?string $contextoAtual = null;
 
     public function __construct(string $caminhoArquivoJson) {
         $this->carregarTabela($caminhoArquivoJson);

@@ -105,7 +105,6 @@ class AnalisadorSemantico
                     $ultimoEscopo = end($this->pilhaEscopos);
 
                     if ($this->ultimoControle) {
-                        // Estruturas de controle (if, for, while) têm escopos próprios
                         $this->contadorBlocos++;
                         $novoEscopo = "{$ultimoEscopo}_{$this->ultimoControle}_{$this->contadorBlocos}";
                         $this->ultimoControle = null;
@@ -184,25 +183,11 @@ class AnalisadorSemantico
         return null;
     }
 
-    // Função para determinar o tipo do valor à direita
-    private function determinarTipoValor(Token $token): ?string
-    {
-        if ($token->getName() === 'INT') return 'INT';
-        if ($token->getName() === 'FLOAT') return 'FLOAT';
-        if ($token->getName() === 'CHAR') return 'CHAR';
-        if ($token->getName() === 'ID') {
-            $varSimbolo = $this->buscarSimbolo($token->getLexeme(), 'variavel');
-            return $varSimbolo['tipo'] ?? null;
-        }
-        return null;
-    }
-
 
     private function tiposCompativeis(string $tipoVariavel, string $tipoExpressao): bool {
-        // Tabela de compatibilidade
         $compatibilidade = [
-            'INT' => ['INT'], // INT aceita INT ou FLOAT (conversão implícita)
-            'FLOAT' => ['FLOAT'],
+            'INT' => ['INT'],
+            'FLOAT' => ['FLOAT', 'INT'],
             'CHAR' => ['CHAR'],
             'ARRAY' => ['ARRAY']
         ];
@@ -215,17 +200,29 @@ class AnalisadorSemantico
         $nomeVar = $token->getLexeme();
         $escopoEncontrado = null;
 
-        foreach (array_reverse($this->pilhaEscopos) as $escopo) {
-            if (isset($this->escoposHierarquia[$escopo])) {
-                foreach ($this->escoposHierarquia[$escopo] as $simbolo) {
-                    if ($simbolo['nome'] === $nomeVar && $simbolo['categoria'] !== 'funcao') {
-                        $escopoEncontrado = $escopo;
-                        break 2;
+        if ($this->funcaoAtual !== null) {
+            foreach ($this->escoposHierarquia[$this->funcaoAtual] ?? [] as $simbolo) {
+                if ($simbolo['nome'] === $nomeVar && $simbolo['categoria'] === 'parametro') {
+                    $escopoEncontrado = $this->funcaoAtual;
+                    break;
+                }
+            }
+        }
+
+        if (!$escopoEncontrado) {
+            foreach (array_reverse($this->pilhaEscopos) as $escopo) {
+                if (isset($this->escoposHierarquia[$escopo])) {
+                    foreach ($this->escoposHierarquia[$escopo] as $simbolo) {
+                        if ($simbolo['nome'] === $nomeVar && $simbolo['categoria'] !== 'funcao') {
+                            $escopoEncontrado = $escopo;
+                            break 2;
+                        }
                     }
                 }
             }
         }
 
+        // Verifica escopo global
         if (!$escopoEncontrado && isset($this->escoposHierarquia['global'])) {
             foreach ($this->escoposHierarquia['global'] as $simbolo) {
                 if ($simbolo['nome'] === $nomeVar && $simbolo['categoria'] !== 'funcao') {
@@ -317,12 +314,10 @@ class AnalisadorSemantico
 
     private function determinarTipoArgumento(array $tokens): string
     {
-        // Implementar lógica de inferência de tipo baseada nos tokens
-        // Exemplo simplificado para demonstração
         $primeiroToken = $tokens[0];
 
-        if ($primeiroToken->getName() === 'NUM_INT') return 'INT';
-        if ($primeiroToken->getName() === 'NUM_FLOAT') return 'FLOAT';
+        if ($primeiroToken->getName() === 'INT') return 'INT';
+        if ($primeiroToken->getName() === 'FLOAT') return 'FLOAT';
         if ($primeiroToken->getName() === 'ID') {
             $var = $this->buscarSimbolo($primeiroToken->getLexeme(), 'variavel');
             return $var['tipo'] ?? 'DESCONHECIDO';
