@@ -109,11 +109,9 @@ class AnalisadorSemantico
                         $novoEscopo = "{$ultimoEscopo}_{$this->ultimoControle}_{$this->contadorBlocos}";
                         $this->ultimoControle = null;
                     } elseif ($this->funcaoAtual) {
-                        // Se estamos dentro de uma função, associamos o escopo ao nome da função
                         $novoEscopo = "{$this->funcaoAtual}_bloco{$this->contadorBlocos}";
                         $this->contadorBlocos++;
                     } else {
-                        // Bloco genérico sem função associada
                         $novoEscopo = "{$ultimoEscopo}_bloco";
                     }
 
@@ -123,7 +121,6 @@ class AnalisadorSemantico
                 case 'FECHA_CHAVES':
                     array_pop($this->pilhaEscopos);
 
-                    // Se o escopo for de uma função e voltarmos para o escopo global, remover função atual
                     if (!empty($this->pilhaFuncoes) && end($this->pilhaEscopos) === 'global') {
                         array_pop($this->pilhaFuncoes);
                         $this->funcaoAtual = end($this->pilhaFuncoes) ?: null;
@@ -133,7 +130,6 @@ class AnalisadorSemantico
         }
     }
 
-    // Função para validar tipos na atribuição
     private function verificarTipoAtribuicao(Token $variavelToken, int $indice): void {
         $nomeVar = $variavelToken->getLexeme();
         $variavelSimbolo = $this->buscarSimbolo($nomeVar, 'variavel');
@@ -143,7 +139,6 @@ class AnalisadorSemantico
             return;
         }
     
-        // Encontra todos os tokens da expressão à direita até o próximo ';' ou fim
         $expressaoTokens = [];
         $nivel = 0;
         for ($i = $indice + 2; $i < count($this->tokens); $i++) {
@@ -176,7 +171,6 @@ class AnalisadorSemantico
             }
         }
     
-        // Lógica simplificada: retorna o tipo mais abrangente
         if (in_array('FLOAT', $tipos)) return 'FLOAT';
         if (in_array('INT', $tipos)) return 'INT';
         if (in_array('CHAR', $tipos)) return 'CHAR';
@@ -222,7 +216,6 @@ class AnalisadorSemantico
             }
         }
 
-        // Verifica escopo global
         if (!$escopoEncontrado && isset($this->escoposHierarquia['global'])) {
             foreach ($this->escoposHierarquia['global'] as $simbolo) {
                 if ($simbolo['nome'] === $nomeVar && $simbolo['categoria'] !== 'funcao') {
@@ -335,7 +328,6 @@ class AnalisadorSemantico
                     continue;
                 }
 
-                // Pega o próximo token após RETURN (ignorando possíveis espaços/comentários)
                 $proximoToken = $this->tokens[$indice + 1] ?? null;
                 $valorRetorno = ($proximoToken && !in_array($proximoToken->getName(), ['FECHA_CHAVES', 'PONTO_VIRGULA']))
                     ? $proximoToken->getLexeme()
